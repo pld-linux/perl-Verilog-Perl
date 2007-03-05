@@ -8,12 +8,12 @@
 Summary:	perl(Verilog::Perl) - an perl way to handle Verilog files
 #Summary(pl):	
 Name:		perl-Verilog-Perl
-Version:	2.330
+Version:	2.372
 Release:	0.1
 License:	LGPL or Perl Artistic License
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	0f5c30639f22aebcadf6aaff4f615bac
+# Source0-md5:	b879520aa1f4b05c01f5cfa2bcdfaa12
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
