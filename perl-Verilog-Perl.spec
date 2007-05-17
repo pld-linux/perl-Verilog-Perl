@@ -51,7 +51,8 @@ całej bazie projektu.
 %build
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
-%{__make}
+%{__make} \
+	OPTIMIZE="%{rpmcflags}"
 
 %{?with_tests:%{__make} test}
 
@@ -74,6 +75,7 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{perl_vendorarch}/Verilog/Netlist
 %{perl_vendorarch}/Verilog/Netlist/*.pm
 %dir %{perl_vendorarch}/auto/Verilog/Preproc
-%{perl_vendorarch}/auto/Verilog/Preproc/Preproc*
+%{perl_vendorarch}/auto/Verilog/Preproc/Preproc.bs
+%attr(755,root,root) %{perl_vendorarch}/auto/Verilog/Preproc/Preproc.so
 %{_mandir}/man1/*
 %{_mandir}/man3/*
