@@ -12,7 +12,7 @@ Version:	2.380
 Release:	1
 License:	LGPL or Perl Artistic License
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Verilog/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	536d4e72be7e96b5cc81fe5e9dc90ecb
 URL:		http://search.cpan.org/dist/Verilog-Perl/
 BuildRequires:	perl-devel >= 1:5.8.0
