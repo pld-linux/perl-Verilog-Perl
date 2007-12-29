@@ -1,3 +1,6 @@
+# TODO
+# - should use CXX/CC make options not CC for .cpp compile!
+# - maybe bin/man1 should be moved to another package
 #
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
@@ -9,7 +12,7 @@ Summary:	Verilog::Perl - an Perl way to handle Verilog files
 Summary(pl.UTF-8):	Verilog::Perl - perlowy sposób obsługi plików Verilog
 Name:		perl-Verilog-Perl
 Version:	2.380
-Release:	1
+Release:	2
 License:	LGPL or Perl Artistic License
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Verilog/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -52,6 +55,7 @@ całej bazie projektu.
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make} \
+	CC="%{__cxx}" \
 	OPTIMIZE="%{rpmcflags}"
 
 %{?with_tests:%{__make} test}
@@ -65,7 +69,6 @@ rm -rf $RPM_BUILD_ROOT
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-# maybe bin/man1 should be moved to another package
 %files
 %defattr(644,root,root,755)
 %doc Changes README
@@ -74,6 +77,7 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorarch}/Verilog/*.pm
 %dir %{perl_vendorarch}/Verilog/Netlist
 %{perl_vendorarch}/Verilog/Netlist/*.pm
+%dir %{perl_vendorarch}/auto/Verilog
 %dir %{perl_vendorarch}/auto/Verilog/Preproc
 %{perl_vendorarch}/auto/Verilog/Preproc/Preproc.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Verilog/Preproc/Preproc.so
