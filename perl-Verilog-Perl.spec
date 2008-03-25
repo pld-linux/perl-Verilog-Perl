@@ -18,9 +18,9 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Verilog/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	82a64cbbee51cfa6872960122cc19849
 URL:		http://search.cpan.org/dist/Verilog-Perl/
+BuildRequires:	flex
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
-BuildRequires:	flex
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
