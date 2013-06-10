@@ -11,12 +11,12 @@
 Summary:	Verilog::Perl - an Perl way to handle Verilog files
 Summary(pl.UTF-8):	Verilog::Perl - perlowy sposób obsługi plików Verilog
 Name:		perl-Verilog-Perl
-Version:	3.313
-Release:	2
+Version:	3.401
+Release:	1
 License:	LGPL or Perl Artistic License
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Verilog/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	13fbacac8b79df4de9217227c39160ff
+# Source0-md5:	d44e4af50143a50d731fdc8819a33ce6
 URL:		http://search.cpan.org/dist/Verilog-Perl/
 BuildRequires:	flex
 BuildRequires:	perl-devel >= 1:5.8.0
