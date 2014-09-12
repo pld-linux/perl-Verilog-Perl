@@ -83,10 +83,8 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorarch}/Verilog/Netlist/*.pm
 %dir %{perl_vendorarch}/auto/Verilog
 %dir %{perl_vendorarch}/auto/Verilog/Preproc
-%{perl_vendorarch}/auto/Verilog/Preproc/Preproc.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Verilog/Preproc/Preproc.so
 %dir %{perl_vendorarch}/auto/Verilog/Parser
-%{perl_vendorarch}/auto/Verilog/Parser/Parser.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Verilog/Parser/Parser.so
 %{_mandir}/man1/*
 %{_mandir}/man3/*
