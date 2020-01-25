@@ -5,7 +5,6 @@
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define	pdir	Verilog
 %define	pnam	Perl
 Summary:	Verilog::Perl - an Perl way to handle Verilog files
